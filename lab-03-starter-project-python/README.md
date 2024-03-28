@@ -6,7 +6,6 @@
 
 To test the app, ensure you have the following dependencies installed on your system:
 
-- [Python](https://www.python.org/) (version 3.10 or later)
 - [Docker](https://www.docker.com/) (version 24.0.5 or later)
 - A shell environment for running scripts
 
