@@ -1,0 +1,8 @@
+# Build files
+build/*
+
+# Git files
+.gitignore
+
+# README file
+README.rst
