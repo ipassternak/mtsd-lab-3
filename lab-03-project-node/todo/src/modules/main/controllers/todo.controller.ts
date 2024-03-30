@@ -10,13 +10,14 @@ import {
   Put,
 } from '@nestjs/common';
 
+import { ApiTags } from '@nestjs/swagger';
+
 import { TodoToItem, TodoToList } from 'src/modules/main/interfaces/todo';
 
 import { TodoService } from 'src/modules/main/services/todo.service';
 
 import { CreateTodoDto } from 'src/modules/main/dto/request/create-todo.dto';
 import { UpdateTodoDto } from 'src/modules/main/dto/request/update-todo.dto';
-import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('Todo')
 @Controller('todo')
