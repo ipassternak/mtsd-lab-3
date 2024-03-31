@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  node-todo-app:
+    build: ../todo
+    environment:
+      PORT: 8080
+      DATABASE_URL: postgres://postgres:postgres@postgres_db:5432/todo
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres_db
+  postgres_db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: todo
+    ports:
+      - "5432:5432"
